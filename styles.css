@@ -231,10 +231,18 @@ nav{
     border-radius: 5px;
 }
 
-.service__card:nth-child(1) div { background-color: #f0fdfa; color: #00d5be; }
-.service__card:nth-child(2) div { background-color: #fff1f2; color: #ff637e; }
-.service__card:nth-child(3) div { background-color: #faf5ff; color: #c27aff; }
-.service__card:nth-child(4) div { background-color: #f0f9ff; color: #00bcff; }
+.service__card:nth-child(1) div {
+     background-color: #f0fdfa; color: #00d5be; 
+    }
+.service__card:nth-child(2) div { 
+    background-color: #fff1f2; color: #ff637e;
+ }
+.service__card:nth-child(3) div {
+     background-color: #faf5ff; color: #c27aff; 
+    }
+.service__card:nth-child(4) div {
+     background-color: #f0f9ff; color: #00bcff; 
+    }
 
 .service__card h4 {
     margin-bottom: 0.5rem;
