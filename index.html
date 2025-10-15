@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Meta SEO -->
+  <meta name="description" content="Digi Satya is a digital marketing agency specializing in Facebook Ads, Google Ads, SEO, Social Media Management, and Website Development. Helping businesses grow with honest digital strategies." />
+  <meta name="keywords" content="digital marketing agency, Facebook Ads, Google Ads, SEO, social media management, website design, Digi Satya" />
+  <meta name="author" content="Digi Satya" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.jpg" />
+
+  <!-- Remix Icons & Swiper -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+  <!-- Custom Styles -->
   <link rel="stylesheet" href="styles.css" />
-  <title>Digi Satya - Digital Marketing Agency</title>
+
+  <title>Digi Satya | Digital Marketing Agency</title>
 </head>
 <body>
 
 <!-- NAVIGATION -->
-<nav>
+<nav class="nav">
   <div class="nav__header">
     <div class="nav__logo">
-      <a href="#home">
-        <img src="assets/logo.jpg" alt="DigiSatya Logo" style="height:40px;">
+      <a href="#home" aria-label="Digi Satya Home">
+        <img src="assets/logo.jpg" alt="Digi Satya Logo" class="nav__logo-img" />
         Digi<span>Satya</span>
       </a>
     </div>
-    <div class="nav__menu__btn" id="menu-btn">
+    <button class="nav__menu__btn" id="menu-btn" aria-label="Toggle Menu">
       <i class="ri-menu-line"></i>
-    </div>
+    </button>
   </div>
 
   <ul class="nav__links" id="nav-links">
@@ -29,31 +42,30 @@
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#whyus">Why Us</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 
   <div class="nav__btns">
-    <a href="#contact" class="btn">Connect with us</a>
+    <a href="#contact" class="btn">Connect with Us</a>
   </div>
 </nav>
 
 <!-- HEADER SECTION -->
 <header class="section__container header__container" id="home">
   <div class="header__image">
-    <img src="assets/header.png" alt="header image">
+    <img src="assets/header.jpg" alt="Digital Marketing Team" loading="lazy" />
   </div>
   <div class="header__content">
     <h1>Welcome to <span>Digi Satya</span></h1>
     <p class="section__description">
-      Every brand has a story — we help you tell it to the world.  
-      At Digi Satya, we believe digital marketing isn’t just about ads and analytics; it’s about people, ideas, and growth.  
-      We work with businesses that want to make a difference — helping them reach the right audience, build real connections, and turn clicks into customers.  
-      Whether you’re just getting started or already running strong, we’ll walk with you every step of the way — planning, creating, and growing together.  
-      Let’s turn your digital presence into something that truly works for you.
+      Every brand has a story — we help you tell it to the world.
+      At Digi Satya, we believe digital marketing isn’t just about ads and analytics; it’s about people, ideas, and growth.
+      Whether you’re starting or scaling, we’ll walk with you every step — planning, creating, and growing together.
     </p>
     <div class="header__btns">
-      <button class="btn">Get Started</button>
-      <a href="#"><span><i class="ri-play-fill"></i></span> Watch Video</a>
+      <a href="#contact" class="btn">Get Started</a>
+      <a href="#" class="video__btn"><i class="ri-play-fill"></i> Watch Video</a>
     </div>
   </div>
 </header>
@@ -61,7 +73,7 @@
 <!-- ABOUT SECTION -->
 <section class="section__container about__container" id="about">
   <div class="about__image">
-    <img src="assets/about.png" alt="about image">
+    <img src="assets/about.jpg" alt="About Digi Satya Team" loading="lazy" />
   </div>
   <div class="about__content">
     <h2 class="section__header">About Digi Satya</h2>
@@ -70,27 +82,23 @@
       No big words. No false promises. Just real results.
     </p>
     <p class="section__description">
-      Over time, we’ve worked with passionate entrepreneurs, local brands, and small businesses who trusted us to grow their digital presence — and we made sure we delivered.  
-      Our small but dedicated team loves what we do — from crafting creative ads to analyzing numbers late at night. Every campaign we run has one clear goal: helping your business grow.
+      Our small but passionate team loves what we do — from crafting creative ads to analyzing late-night data.  
+      Every campaign we run has one goal: helping your business grow.
     </p>
+
     <ul class="about__list">
       <li>
         <span><i class="ri-user-star-line"></i></span>
         <div>
           <h4>Our Belief</h4>
-          <p class="section__description">
-            We don’t just sell marketing services.  
-            We build relationships, create trust, and help businesses find their digital identity.
-          </p>
+          <p>We build relationships, create trust, and help businesses find their digital identity.</p>
         </div>
       </li>
       <li>
         <span><i class="ri-lightbulb-flash-line"></i></span>
         <div>
           <h4>Our Vision</h4>
-          <p class="section__description">
-            To make digital marketing simple, smart, and accessible for every business in India.
-          </p>
+          <p>To make digital marketing simple, smart, and accessible for every business in India.</p>
         </div>
       </li>
     </ul>
@@ -99,129 +107,172 @@
 
 <!-- SERVICES SECTION -->
 <section id="services" class="section__container services__container">
-  <h2 class="section__header">What We Do</h2>
-  <p class="section__description">We handle the marketing so you can focus on running your business.</p>
+  <h2 class="section__header">Our Services</h2>
+  <p class="section__description">
+    We handle your digital marketing so you can focus on growing your business.
+  </p>
+
   <div class="services__grid">
     <div class="service__card">
-      <div><i class="ri-instagram-line"></i></div>
-      <h4>Social Media Marketing</h4>
-      <p class="section__description">
-        Your audience is scrolling — we make sure they stop at your brand.  
-        From creative posts to ad campaigns, we manage everything to help you get noticed and remembered.
-      </p>
+      <div><i class="ri-facebook-circle-line"></i></div>
+      <h4>Facebook Ads</h4>
+      <p>High-performing campaigns that drive engagement, leads, and conversions.</p>
     </div>
+
     <div class="service__card">
-      <div><i class="ri-advertisement-line"></i></div>
-      <h4>Google Ads & Lead Campaigns</h4>
-      <p class="section__description">
-        Need instant results? We run targeted Google and Meta Ads that bring in quality leads and sales, not just traffic.
-      </p>
+      <div><i class="ri-google-line"></i></div>
+      <h4>Google Ads</h4>
+      <p>Instant visibility and quality leads through optimized search and display campaigns.</p>
     </div>
+
+    <div class="service__card">
+      <div><i class="ri-instagram-line"></i></div>
+      <h4>Social Media Management</h4>
+      <p>Creative content, consistent branding, and real audience engagement across platforms.</p>
+    </div>
+
     <div class="service__card">
       <div><i class="ri-search-eye-line"></i></div>
       <h4>SEO (Search Engine Optimization)</h4>
-      <p class="section__description">
-        We help your website show up when customers search for you — with clean, practical SEO that actually works.
-      </p>
+      <p>Rank higher on Google and attract organic traffic that converts.</p>
     </div>
+
     <div class="service__card">
       <div><i class="ri-global-line"></i></div>
       <h4>Website Design & Development</h4>
-      <p class="section__description">
-        Your website is often your first impression.  
-        We build fast, modern, and mobile-friendly websites that reflect your brand and convert visitors into buyers.
-      </p>
+      <p>Stunning, responsive websites designed to reflect your brand and drive conversions.</p>
     </div>
   </div>
 </section>
 
 <!-- WHY US SECTION -->
-<section id="whyus" class="section__container portfolio__container">
+<section id="whyus" class="section__container whyus__container">
   <h2 class="section__header">Why Businesses Choose Digi Satya</h2>
+  <p class="section__description">
+    We’re not just another agency — we partner with you for real, measurable growth.
+  </p>
+
+  <div class="services__grid">
+    <div class="service__card">
+      <div><i class="ri-user-heart-line"></i></div>
+      <h4>Personal Attention</h4>
+      <p>Every client matters. Tailored strategies and dedicated support for your success.</p>
+    </div>
+
+    <div class="service__card">
+      <div><i class="ri-chat-check-line"></i></div>
+      <h4>Honest Communication</h4>
+      <p>Transparent, clear, and results-driven communication — no jargon, no fluff.</p>
+    </div>
+
+    <div class="service__card">
+      <div><i class="ri-hand-coin-line"></i></div>
+      <h4>Affordable & Transparent</h4>
+      <p>Great marketing shouldn’t break the bank. Fair pricing, no hidden costs.</p>
+    </div>
+
+    <div class="service__card">
+      <div><i class="ri-bar-chart-line"></i></div>
+      <h4>Real Growth</h4>
+      <p>We measure success by your progress — every campaign is built for tangible growth.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO SECTION -->
+<section id="portfolio" class="portfolio section__container">
+  <h2 class="section__header">Our Portfolio</h2>
+  <p class="section__description">
+    A glimpse of the creative campaigns, websites, and digital solutions we’ve delivered for our clients.
+  </p>
+
   <div class="portfolio__grid">
     <div class="portfolio__card">
+      <img src="assets/portfolio1.jpg" alt="Social Media Campaign" loading="lazy" />
       <div class="portfolio__info">
-        <h4>Personal Attention</h4>
-        <p>Every client matters. We treat your business like our own.</p>
+        <h4>Social Media Campaign</h4>
+        <p>Increased engagement by 250% through optimized Instagram & Facebook strategies for a lifestyle brand.</p>
       </div>
     </div>
+
     <div class="portfolio__card">
+      <img src="assets/portfolio2.jpg" alt="Google Ads Campaign" loading="lazy" />
       <div class="portfolio__info">
-        <h4>Honest Communication</h4>
-        <p>No jargon, no false promises. Only clarity and results.</p>
+        <h4>Google Ads Success</h4>
+        <p>Generated 1,200+ quality leads in 30 days for a real estate client with targeted ad campaigns.</p>
       </div>
     </div>
+
     <div class="portfolio__card">
+      <img src="assets/portfolio3.jpg" alt="SEO Optimization Project" loading="lazy" />
       <div class="portfolio__info">
-        <h4>Affordable & Transparent</h4>
-        <p>Great marketing shouldn’t break the bank.</p>
+        <h4>SEO Optimization</h4>
+        <p>Achieved first-page rankings for 15+ keywords for a local service-based business.</p>
       </div>
     </div>
+
     <div class="portfolio__card">
+      <img src="assets/portfolio4.jpg" alt="Website Design Project" loading="lazy" />
       <div class="portfolio__info">
-        <h4>Real Growth</h4>
-        <p>We measure success by your progress, not our portfolio.</p>
+        <h4>Website Design Project</h4>
+        <p>Modern, responsive website design that increased conversions by 40% in the first quarter.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT SECTION (exactly as you provided) -->
+<!-- CONTACT SECTION -->
 <section class="section__container contact__container" id="contact">
   <h2 class="section__header">Get In Touch</h2>
   <p class="section__description">Have a question or want to work with us? Send us a message!</p>
+
   <div class="contact__grid">
     <form class="contact__form" action="https://formspree.io/f/xldpndee" method="POST">
-      <h2>Contact Me</h2>
+      <h3>Contact Us</h3>
+
       <div class="form__group">
-        <label>Full Name *</label>
-        <input type="text" name="full_name" placeholder="Enter your full name" required />
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="full_name" placeholder="Enter your full name" required />
       </div>
+
       <div class="form__group">
-        <label>Email *</label>
-        <input type="email" name="email" placeholder="Enter your email" required />
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
       </div>
+
       <div class="form__group">
-        <label>Phone *</label>
+        <label for="phone">Phone *</label>
         <div class="phone__input">
           <span class="country-code">+91</span>
-          <input type="tel" name="phone" placeholder="Enter your phone number" required />
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
         </div>
       </div>
+
+<div class="form__group">
+  <label for="service">Service *</label>
+  <select id="service" name="service" required>
+    <option value="">Select service</option>
+    <option>Facebook Ads</option>
+    <option>Google Ads</option>
+    <option>Social Media Management</option>
+    <option>SEO (Search Engine Optimization)</option>
+    <option>Website Design & Development</option>
+  </select>
+</div>
+  
+
       <div class="form__group">
-        <label>Service *</label>
-        <select name="service" required>
-          <option value="">Select service</option>
-          <option>Website Design</option>
-          <option>SEO</option>
-          <option>Digital Marketing</option>
-          <option>Real Estate - Buying Property</option>
-          <option>Real Estate - Selling Property</option>
-          <option>Real Estate - Land Purchase</option>
-          <option>Real Estate - Land Sale</option>
-        </select>
+        <label for="website">Website URL</label>
+        <input type="url" id="website" name="website_url" placeholder="Enter your website URL" />
       </div>
+
       <div class="form__group">
-        <label>Budget *</label>
-        <select name="budget" required>
-          <option value="">Select Budget</option>
-          <option>₹10,000 - ₹50,000</option>
-          <option>₹50,000 - ₹1,00,000</option>
-          <option>₹1,00,000+</option>
-        </select>
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
       </div>
-      <div class="form__group">
-        <label>Website URL</label>
-        <input type="url" name="website_url" placeholder="Enter your website URL" />
-      </div>
-      <div class="form__group">
-        <label>Message *</label>
-        <textarea name="message" rows="5" placeholder="Enter your message" required></textarea>
-      </div>
+
       <button type="submit" class="btn">Send Message</button>
-      <div class="success-message" id="success-message">
-        Thank you! Your message has been sent.
-      </div>
+      <div class="success-message" id="success-message">Thank you! Your message has been sent.</div>
     </form>
   </div>
 </section>
@@ -231,43 +282,48 @@
   <div class="section__container footer__container">
     <div class="footer__col">
       <div class="footer__logo">
-        <a href="#">Digi<span>Satya</span></a>
+        <a href="#home">Digi<span>Satya</span></a>
       </div>
-      <p class="section__description">
-        Digi Satya – Your Partner for Honest Digital Growth.
-      </p>
+      <p class="section__description">Digi Satya – Your Partner for Honest Digital Growth.</p>
+
       <h3>Follow Us</h3>
       <ul class="footer__socials">
-        <li><a href="#"><i class="ri-facebook-line"></i></a></li>
-        <li><a href="#"><i class="ri-twitter-line"></i></a></li>
-        <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+        <li><a href="#" aria-label="Facebook"><i class="ri-facebook-line"></i></a></li>
+        <li><a href="#" aria-label="Twitter"><i class="ri-twitter-line"></i></a></li>
+        <li><a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a></li>
       </ul>
     </div>
+
     <div class="footer__col">
       <h4>Quick Links</h4>
       <ul>
         <li><a href="#about">About Us</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#whyus">Why Choose Us</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
+
     <div class="footer__col">
       <h4>Contact</h4>
       <ul class="footer__links">
-        <li><a href="#"><span><i class="ri-phone-line"></i></span> +91-8178839848</a></li>
-        <li><a href="#"><span><i class="ri-mail-line"></i></span> info@digisatya.com</a></li>
+        <li><i class="ri-phone-line"></i> <a href="tel:+918178839848">+91 81788 39848</a></li>
+        <li><i class="ri-mail-line"></i> <a href="mailto:info@digisatya.com">info@digisatya.com</a></li>
       </ul>
     </div>
   </div>
+
   <div class="footer__bar">
     <p>&copy; 2025 Digi Satya. All rights reserved.</p>
   </div>
 </footer>
 
+<!-- JS Scripts -->
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 <script src="main.js"></script>
+
 </body>
 </html>

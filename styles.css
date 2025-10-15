@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --primary-color: #ff8906;
-    --secondary-color: #e5306f;
+    --primary-color: #0077b6; 
+    --secondary-color: #ff8906; 
     --text-dark: #0e0d16;
-    --text-light: #767268;
+    --text-light: #080808ff;
     --extra-light: #f7f8fd;
     --white: #ffffff;
     --max-width: 1200px;
@@ -15,6 +15,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #e0f7ff; 
+    color: #0e0d16; 
+}
+
+
 
 body{
     font-family: 'Montserrat', sans-serif;
@@ -198,7 +205,7 @@ nav{
 }
 
 /* Service Section */
-.service{
+.service {
     background-color: var(--extra-light);
 }
 
@@ -231,18 +238,22 @@ nav{
     border-radius: 5px;
 }
 
-.service__card:nth-child(1) div {
-     background-color: #f0fdfa; color: #00d5be; 
-    }
+/* Icon Background + Color for Each Service */
+.service__card:nth-child(1) div { 
+    background-color: #ecf3ff; color: #1877f2; /* Facebook Blue */
+}
 .service__card:nth-child(2) div { 
-    background-color: #fff1f2; color: #ff637e;
- }
-.service__card:nth-child(3) div {
-     background-color: #faf5ff; color: #c27aff; 
-    }
-.service__card:nth-child(4) div {
-     background-color: #f0f9ff; color: #00bcff; 
-    }
+    background-color: #fef3f2; color: #ea4335; /* Google Red */
+}
+.service__card:nth-child(3) div { 
+    background-color: #f0fdfa; color: #00d5be; /* Teal for Social Media Mgmt */
+}
+.service__card:nth-child(4) div { 
+    background-color: #faf5ff; color: #c27aff; /* Purple for SEO */
+}
+.service__card:nth-child(5) div { 
+    background-color: #f0f9ff; color: #00bcff; /* Blue for Web Design */
+}
 
 .service__card h4 {
     margin-bottom: 0.5rem;
@@ -251,11 +262,11 @@ nav{
     color: var(--text-dark);
 }
 
-.service__card .section__description{
+.service__card .section__description {
     text-align: left;
 }
 
-.service__btn{
+.service__btn {
     display: flex;
     justify-content: center;
 }
@@ -264,10 +275,44 @@ nav{
     box-shadow: 0 5px 30px rgba(0,0,0,0.1);
 }
 
-.service__card:nth-child(1):hover { border-color: #00d5be; }
-.service__card:nth-child(2):hover { border-color: #ff627e; }
-.service__card:nth-child(3):hover { border-color: #c27aff; }
-.service__card:nth-child(4):hover { border-color: #00bcff; }
+/* Hover border accent for each service */
+.service__card:nth-child(1):hover { border-color: #1877f2; }
+.service__card:nth-child(2):hover { border-color: #ea4335; }
+.service__card:nth-child(3):hover { border-color: #00d5be; }
+.service__card:nth-child(4):hover { border-color: #c27aff; }
+.service__card:nth-child(5):hover { border-color: #00bcff; }
+
+/* WHY US Section */
+.whyus__container {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+/* Optional unique colors per card */
+.whyus__container .service__card:nth-child(1) div {
+  background-color: #f0fdfa;
+  color: #00d5be;
+}
+
+.whyus__container .service__card:nth-child(2) div {
+  background-color: #fff1f2;
+  color: #ff627e;
+}
+
+.whyus__container .service__card:nth-child(3) div {
+  background-color: #fefce8;
+  color: #f59e0b;
+}
+
+.whyus__container .service__card:nth-child(4) div {
+  background-color: #f0f9ff;
+  color: #00bcff;
+}
+
+.whyus__container .service__card:hover {
+  box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+}
+
 
 /* About Section */
 .about__container{
