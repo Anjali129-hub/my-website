@@ -42,7 +42,6 @@ ul{
     list-style: none;
 }
 
-/* Buttons */
 .btn{
     padding: 0.75rem 1.5rem;
     outline: none;
@@ -238,21 +237,20 @@ nav{
     border-radius: 5px;
 }
 
-/* Icon Background + Color for Each Service */
 .service__card:nth-child(1) div { 
-    background-color: #ecf3ff; color: #1877f2; /* Facebook Blue */
+    background-color: #ecf3ff; color: #1877f2; 
 }
 .service__card:nth-child(2) div { 
-    background-color: #fef3f2; color: #ea4335; /* Google Red */
+    background-color: #fef3f2; color: #ea4335; 
 }
 .service__card:nth-child(3) div { 
-    background-color: #f0fdfa; color: #00d5be; /* Teal for Social Media Mgmt */
+    background-color: #f0fdfa; color: #00d5be; 
 }
 .service__card:nth-child(4) div { 
-    background-color: #faf5ff; color: #c27aff; /* Purple for SEO */
+    background-color: #faf5ff; color: #c27aff;
 }
 .service__card:nth-child(5) div { 
-    background-color: #f0f9ff; color: #00bcff; /* Blue for Web Design */
+    background-color: #f0f9ff; color: #00bcff; 
 }
 
 .service__card h4 {
@@ -275,7 +273,6 @@ nav{
     box-shadow: 0 5px 30px rgba(0,0,0,0.1);
 }
 
-/* Hover border accent for each service */
 .service__card:nth-child(1):hover { border-color: #1877f2; }
 .service__card:nth-child(2):hover { border-color: #ea4335; }
 .service__card:nth-child(3):hover { border-color: #00d5be; }
@@ -288,7 +285,6 @@ nav{
   padding: 4rem 1rem;
 }
 
-/* Optional unique colors per card */
 .whyus__container .service__card:nth-child(1) div {
   background-color: #f0fdfa;
   color: #00d5be;
