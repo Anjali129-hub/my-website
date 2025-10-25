@@ -82,3 +82,13 @@ ScrollReveal().reveal(".contact__info", {
 ScrollReveal().reveal(".contact__form", { 
     ...scrollRevealOption, origin: "right", delay: 600 
 });
+// Our Clients
+ScrollReveal().reveal(".clients__section .section__header", { 
+    ...scrollRevealOption 
+});
+ScrollReveal().reveal(".clients__section .section__description", { 
+    ...scrollRevealOption, delay: 200 
+});
+ScrollReveal().reveal(".clients__scroll__wrapper", { 
+    ...scrollRevealOption, delay: 400, origin: "bottom" 
+});
