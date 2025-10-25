@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --primary-color: #4f46e5;       /* Deep Indigo (modern & premium) */
-    --secondary-color: #06b6d4;     /* Cyan tone (refreshing accent) */
+    --primary-color: #4f46e5;       
+    --secondary-color: #06b6d4;     
     --text-dark: #0f172a;
     --text-light: #475569;
     --white: #ffffff;
@@ -310,12 +310,11 @@ nav{
 
 .services__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 per row on desktop */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 2rem;
   margin-top: 3rem;
 }
 
-/* SERVICE CARD BASE */
 .service__card {
   background: var(--white);
   border-radius: 1rem;
@@ -328,7 +327,6 @@ nav{
   border: 2px solid transparent;
 }
 
-/* ICON STYLE */
 .service__card div {
   width: 60px;
   height: 60px;
@@ -340,7 +338,6 @@ nav{
   transition: 0.3s ease;
 }
 
-/* DIFFERENT COLORS */
 .service__card:nth-child(1) div { background-color: #ecf3ff; color: #1877f2; }
 .service__card:nth-child(2) div { background-color: #fef3f2; color: #ea4335; }
 .service__card:nth-child(3) div { background-color: #f0fdfa; color: #00d5be; }
@@ -348,7 +345,7 @@ nav{
 .service__card:nth-child(5) div { background-color: #f0f9ff; color: #00bcff; }
 .service__card:nth-child(6) div { background-color: #fffbe6; color: #f59e0b; }
 
-/* TITLE + TEXT */
+
 .service__card h4 {
   font-size: 1.25rem;
   font-weight: 700;
@@ -362,7 +359,6 @@ nav{
   line-height: 1.6;
 }
 
-/* BEAUTIFUL HOVER EFFECT */
 .service__card::before {
   content: "";
   position: absolute;
@@ -617,7 +613,7 @@ nav{
 /* ===================== CONTACT SECTION ===================== */
 .contact__container {
   padding: 5rem 1rem;
-  background: linear-gradient(135deg, #fffdf5 0%, #fff9e6 50%, #ffffff 100%); /* Deep blue background */
+  background: linear-gradient(135deg, #fffdf5 0%, #fff9e6 50%, #ffffff 100%); 
   color: var(--white);
   position: relative;
   overflow: hidden;
@@ -627,12 +623,11 @@ nav{
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Left and Right */
+  grid-template-columns: 1fr 1fr; 
   align-items: start;
   gap: 2rem;
 }
 
-/* LEFT SIDE INFO */
 .contact__info {
   background: transparent;
   color: var(--white);
@@ -648,7 +643,7 @@ nav{
 }
 
 .contact__info h2 span {
-  color: #9d5308ff; /* Yellow highlight (like in screenshot) */
+  color: #9d5308ff; 
 }
 
 .contact__info p {
@@ -677,7 +672,6 @@ nav{
   color: #ffca28;
 }
 
-/* RIGHT SIDE FORM */
 .contact__form {
   background: #ffffff;
   border-radius: 0.5rem;
@@ -696,7 +690,6 @@ nav{
   text-align: left;
 }
 
-/* FORM ELEMENTS */
 .form__group {
   display: flex;
   flex-direction: column;
@@ -727,7 +720,6 @@ nav{
   outline: none;
 }
 
-/* PHONE INPUT */
 .phone__input {
   display: flex;
   align-items: center;
@@ -748,7 +740,6 @@ nav{
   flex: 1;
 }
 
-/* CAPTCHA */
 .captcha__group {
   display: flex;
   align-items: center;
@@ -759,7 +750,6 @@ nav{
   color: var(--text-dark);
 }
 
-/* SUCCESS MESSAGE */
 .success-message {
   display: none;
   text-align: center;
@@ -768,7 +758,6 @@ nav{
   margin-top: 10px;
 }
 
-/* BUTTON */
 .contact__form .btn {
   background: var(--gradient-color);
   color: var(--white);
@@ -785,7 +774,6 @@ nav{
   transform: translateY(-2px);
 }
 
-/* ===================== FIXED FLOATING ICONS ===================== */
 .floating__icons {
   position: fixed;
   right: 20px;
@@ -810,7 +798,6 @@ nav{
   transition: 0.3s;
 }
 
-/* Different colors for each icon */
 .float-icon.call {
   background-color: #06b6d4;
 }
@@ -823,7 +810,6 @@ nav{
   background-color: #25d366;
 }
 
-/* Hover effect */
 .float-icon:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
